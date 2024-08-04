@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReeceJY Portfolio</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body id="body" class="min-h-screen bg-white dark:bg-black dark:text-white">
+    <header class="bg-white text-black dark:bg-black dark:text-white sticky top-0 z-10 border-b border-gray-200 dark:border-b-black">
+        <div class="container mx-auto p-4 flex justify-between items-center relative">
+            <h1 class="text-base font-light hover:opacity-60">
+                <a href="#about">ReeceJY</a>
+            </h1>
+            <button id="nav-toggle" class="md:hidden cursor-pointer" aria-label="Toggle navigation menu">
+                <span class="hamburger block hover:opacity-60">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </span>
+                <span class="close hidden hover:opacity-60">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </button>
+            <nav id="nav-desktop" class="hidden md:flex space-x-6 text-base font-light">
+                <a href="#about" class="hover:opacity-60">About</a>
+                <a href="#projects" class="hover:opacity-60">Projects</a>
+                <a href="#contact" class="hover:opacity-60">Contact</a>
+            </nav>
+            <nav id="nav-mobile" class="fixed inset-0 top-[57px] flex flex-col items-center justify-center text-base font-light bg-white dark:bg-black dark:text-white animate-fadeIn hidden md:hidden">
+                <div class="flex flex-col items-center justify-center w-full h-full">
+                    <a href="#about" class="w-full text-center py-4 hover:opacity-60">About</a>
+                    <a href="#projects" class="w-full text-center py-4 hover:opacity-60">Projects</a>
+                    <a href="#contact" class="w-full text-center py-4 hover:opacity-60">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero relative text-center flex flex-col items-center justify-center scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <div class="relative text-black dark:text-white flex flex-col items-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Reece Young</h1>
+                <p class="text-lg md:text-xl mb-8">Ydsfsdfdsfdsf</p>
+                <a href="#projects" class="bg-gray-100 hover:opacity-60 text-black py-4 px-8 border-gray-100 text-base font-light mb-6">Projects</a>
+            </div>
+        </section>
+
+        <section id="projects" class="container mx-auto p-4 scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <p>Projects content goes here.</p>
+        </section>
+
+        <section id="contact" class="container mx-auto p-4 scroll-m-14 widescreen:section-min-height tallscreen:section-min-height">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p>Contact content goes here.</p>
+        </section>
+
+    </main>
+</body>
+</html>
