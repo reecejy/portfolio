@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'ws': {'raw': '(min-aspect-ratio: 3/2)'},
+        'ts': {'raw': '(min-aspect-ratio: 1/2)'},
+      },
     },
   },
   plugins: [],
